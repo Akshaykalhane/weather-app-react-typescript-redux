@@ -3,7 +3,7 @@ import { fetchWeatherData } from "../api/weather";
 import { updateLoading } from "./slices/getWeatherSlice";
 
 
-export const fetchData = createAsyncThunk('weather/fetchData',async(city_name:string,{dispatch,rejectWithValue,fulfillWithValue})=>{
+export const fetchData = createAsyncThunk('weather/fetchData',async(city_name:string,{dispatch,rejectWithValue})=>{
     try{
         const res = await fetchWeatherData(city_name)
         dispatch(updateLoading(true))
