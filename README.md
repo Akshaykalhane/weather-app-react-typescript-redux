@@ -32,3 +32,4 @@ Welcome to our Weather App! This app helps you stay informed about the weather c
 
 4. **Open your browser and navigate to [http://localhost:5173/](http://localhost:5173/) to view the app.**
 
+![Weather App Preview](images/app_snap.png)
