@@ -1,0 +1,15 @@
+.error-msg{
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.error-msg img{
+    max-width: 190px;
+}
+
+.error-msg p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
