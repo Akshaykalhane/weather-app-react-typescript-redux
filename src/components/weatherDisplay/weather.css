@@ -129,11 +129,15 @@ p{
     margin-bottom: 10px;
     box-shadow: 0px 0px 4px #dddddd;
     display: flex;
+    cursor: pointer;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     /* background-color: #fafafa; */
     border-radius: 5px;
+}
+.city-box:hover{
+    box-shadow: 0px 0px 19px #d1d1d1;
 }
 
 .city-box p{

@@ -86,6 +86,10 @@ export const getWeatherSlice = createSlice({
                 state.city_data.push(action.payload)
                 state.city_status='Added';
             }
+        },
+        updateState:(state,action:PayloadAction<WeatherData>)=>{
+            state.weatherData=action.payload;
+            state.city_status=''
         }
     },
     extraReducers:(builder)=> {
@@ -105,6 +109,6 @@ export const getWeatherSlice = createSlice({
     },
 })
 
-export const {updateLoading,addCity}=getWeatherSlice.actions;
+export const {updateLoading,addCity,updateState}=getWeatherSlice.actions;
 
 export default getWeatherSlice.reducer;
